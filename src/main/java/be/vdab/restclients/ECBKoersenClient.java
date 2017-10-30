@@ -8,13 +8,13 @@ import java.math.BigDecimal;
 import java.net.URL;
 import java.util.Scanner;
 
-@Component
-@Qualifier("ECB")
-public class ECBKoersenClient implements KoersenClient {
+//@Component
+//@Qualifier("ECB")
+class ECBKoersenClient implements KoersenClient {
 
 	private final URL url;
 
-	public ECBKoersenClient(@Value("${ecbKoersenURL}") URL url) {
+	public ECBKoersenClient(/*@Value("${ecbKoersenURL}")*/ URL url) {
 		this.url = url;
 	}
 

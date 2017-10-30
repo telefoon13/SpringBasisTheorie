@@ -8,13 +8,11 @@ import java.math.BigDecimal;
 import java.net.URL;
 import java.util.Scanner;
 
-@Component
-@Qualifier("Yahoo")
-public class YahooKoersenClient implements KoersenClient {
+class YahooKoersenClient implements KoersenClient {
 
 	private final URL url;
 
-	public YahooKoersenClient(@Value("${yahooKoersenURL}") URL url) {
+	public YahooKoersenClient(URL url) {
 		this.url = url;
 	}
 
