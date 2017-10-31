@@ -1,5 +1,7 @@
 package be.vdab;
 
+import be.vdab.gaming.GamingConfig;
+import be.vdab.gaming.Spelletje;
 import be.vdab.restclients.RestClientsConfig;
 import be.vdab.services.EuroService;
 import be.vdab.services.ServicesConfig;
@@ -8,9 +10,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.math.BigDecimal;
 
-public class main {
+class Main {
 	public static void main(String[] args){
-		try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(new Class[]{ServicesConfig.class, RestClientsConfig.class})){
+		try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ServicesConfig.class, RestClientsConfig.class, GamingConfig.class)){
 
 //			ClassA objectA = context.getBean(ClassA.class);
 //			System.out.print(
@@ -44,7 +46,9 @@ public class main {
 //			teller2.verhoog();
 //			context.getBean("teller2",Teller.class).verhoog();
 
-			System.out.println(context.getBean(EuroService.class).naarDollar(BigDecimal.valueOf(2)));
+			//System.out.println(context.getBean(EuroService.class).naarDollar(BigDecimal.valueOf(2)));
+
+			System.out.println(context.getBean(Spelletje.class).getAantalVijanden());
 		}
 	}
 }

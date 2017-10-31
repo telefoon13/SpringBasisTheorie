@@ -1,6 +1,6 @@
 package be.vdab.classes;
 
-public class Teller {
+class Teller {
 
 	private int teller;
 

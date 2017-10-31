@@ -11,12 +11,11 @@ import static org.junit.Assert.*;
 
 public class EuroServiceTest {
 
-	private KoersenClient koersenClient;
 	private EuroService euroService;
 
 	@Before
 	public void setUp() throws Exception {
-		koersenClient = new DummyKoersenClient();
+		KoersenClient koersenClient = new DummyKoersenClient();
 		euroService = new EuroService(koersenClient);
 	}
 

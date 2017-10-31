@@ -8,7 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class StringToDateConverter implements Converter<String, Date> {
+ class StringToDateConverter implements Converter<String, Date> {
 
 	private static final String DATUM_FORMAT = "yyyy-MM-dd";
 

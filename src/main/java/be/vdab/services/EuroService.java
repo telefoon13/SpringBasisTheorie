@@ -1,9 +1,6 @@
 package be.vdab.services;
 
 import be.vdab.restclients.KoersenClient;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

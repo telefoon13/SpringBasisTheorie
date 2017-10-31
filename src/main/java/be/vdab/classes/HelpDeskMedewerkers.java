@@ -1,11 +1,8 @@
 package be.vdab.classes;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
-public class HelpDeskMedewerkers {
+ class HelpDeskMedewerkers {
 
 	private final Properties medewerkers;
 
